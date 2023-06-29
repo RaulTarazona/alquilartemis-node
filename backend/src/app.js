@@ -12,6 +12,10 @@ const app = express();
 //puerto
 app.set("port", 5000);
 
+//Middleware-> se usa para que se entienda que lo que se manda es formato json
+app.use(express.json());
+
+
 //Rutas
 app.use("/api/categorias",categoriaRouter);
 app.use("/api/constructora",constructoraRouter);

@@ -7,7 +7,9 @@ const router = Router();
 
 //obtenemos la url base
 router.get("/",constructoraController.getConstructoras);
-
-
+router.post("/",constructoraController.addconstructora);
+router.get("/:id",constructoraController.getConstructora);
+router.delete("/:id",constructoraController.deleteConstructora);
+router.put("/:id",constructoraController.updateConstructoras);
 //Exportamos router
 export default router;
